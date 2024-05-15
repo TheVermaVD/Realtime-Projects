@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: rgb(232, 238, 238);
+        }
+
+        .mytodo-container {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* margin: 10px; */
+            /* margin-top: -9px; */
+        }
+
+        .input-field {
+            width: 100%;
+            max-width: 550px;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        .input-field>input {
+            border: none;
+            outline: none;
+            padding: 12px;
+            margin-block: 12px;
+            border-radius: 4px;
+            font-size: 16px;
+
+        }
+
+        input[type='text'] {
+
+            width: 70%;
+        }
+
+        input[type='button'] {
+
+            /* width: 30%; */
+
+            background-color: #3da33d;
+            font-weight: 700;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 8px;
+            padding: 12px 24px;
+        }
+
+        input[type='button']:hover {
+            background-color: #60b160;
+        }
+
+        .input-field>p.message {
+
+            width: 80%;
+            height: 22px;
+            text-align: left;
+            padding-left: 34px;
+
+            /* margin:0px; */
+            font-size: smaller;
+            font-weight: 500;
+            color: red;
+        }
+
+        ul{
+
+            width: 100%;
+            max-width: 600px;
+            /* border: 1px saddlebrown solid; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: -20px;
+
+        }
+
+        .item{
+
+            width: 100%;
+            max-width: 573px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+
+            border: 0.125px solid #a19f9f;
+            border-radius: 4px;
+            margin: 12px;
+            padding: 12px 8px;
+
+            transition:background-color 0.5s ease;
+
+
+
+        }
+
+        .item:hover{
+
+            background-color: #cbcaca;
+        }
+
+        .item>li{
+            flex-grow: 0.95;
+            list-style:none
+        }
+
+        .item>button{
+            border: none;
+            outline: none;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 2px;
+        
+            background-color: transparent;
+         
+        }
+
+        button:nth-of-type(1){
+
+            color: #008000;
+        }
+
+        button:nth-of-type(2){
+
+            color: #ff0000;
+        }

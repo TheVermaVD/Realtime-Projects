@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Form Validation : There are two ways we can do form validation for the page - 
+
+        a) Client Side Validation : It is done by user side/browser side before sending to server side using javascript we firstly validate then we allow to send form data to server. We do client side validation to ensure all data field by user is correct as per input field requirement and filled accurelty and cant send without left over any input fields and shows message to user to fill all the details before sending it to server.
+        
+        Note : when page get refreshed i.e loaded after clicking on the form submit button that means our filled input data has been succefully send it to server i.e backend, and while pressing submit button our filled all data get vanished as it indicated submitted to the path we provided for sending.
+        
+        b) Server Side Validation : It is done by server side language(node js) and done on the server.
+
+    -->
+
+    <div class="form-container">
+        <h2>Login</h2>
+        <form action="" onsubmit="return validation()">
+
+            <input type="text" placeholder="User Name">
+            <p class="userMessage"></p>
+            <br>
+            <input type="password" placeholder="Password">
+            <p class="passMessage"></p>
+            <br>
+            <input type="submit">
+
+
+        </form>
+
+    </div>
+
+
+        
+
+<script src="script.js"></script>
+</body>
+</html>

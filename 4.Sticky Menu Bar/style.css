@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+}
+
+.main_container{
+    text-align: center;
+}
+.header{
+    padding-bottom: 35px;
+
+    /* border: 1px solid red */
+}
+
+.header>img{
+
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+
+}
+.navbar{
+
+    background-color: cadetblue;
+
+}
+
+.navbar>li{
+    display: inline-block;
+
+    /* margin: 8px; */
+    padding: 16px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: cornsilk;
+    
+}
+
+.about_Us{
+    margin-top: 80px;
+}
+
+.about_Us>p{
+    text-align: justify;
+    margin: 10px 30px;
+    /* border: 1px solid red; */
+}
+
+.about_Us>img{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+
+}
+.about_Us>h1{
+    text-decoration: underline;
+}
+
+/* //steaky menubar i.e navBar styling -- */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
