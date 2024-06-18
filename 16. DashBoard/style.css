@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    min-height: 100vh;
+    width: 100%;
+
+    background-image: url("./images/Wallpaper.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+    overflow: hidden;
+}
+
+#items{
+    visibility: hidden;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+}
+
+.list-group{
+    cursor: default;
+}
+
+#submenu{
+
+    position: absolute;
+    right: -122px;
+    top: 0px;
+    
+    opacity: 0;
+    pointer-events: none;
+
+    z-index: 1;
+    transition: 0.2s ease;
+
+}
+
+.main-menu:hover #submenu{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* CLock CSS */
+
+
+.clock ul {
+              
+    /* font-size: 90px; */
+    gap: 10px;
+}
+
+
+.position-fixed{
+    bottom: 40px;
+    left: 14px;
+}
+
+.footer{
+    box-shadow: 4px 8px 10px rgba(240, 248, 255, 0.753);
+    background-color: rgba(240, 248, 255, 0.753);
+}
+
+
+/* body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font:bold 12px Arial Narrow;
+    background-color: black;
+} */
+
+
+
+
+  

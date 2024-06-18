@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "title": "Calender",
+        "app": "./images/Calender.png"
+    
+    },
+
+    {
+        "id": 2,
+        "title": "Chrome",
+        "app": "./images/Chrome.png"
+        
+    },
+    {
+        "id": 3,
+        "title": "Bin",
+        "app": "./images/Empty Bin.png"
+    
+    },
+    {
+        "id": 4,
+        "title": "Edge",
+        "app": "./images/Edge.svg"
+    
+    }
+
+]
