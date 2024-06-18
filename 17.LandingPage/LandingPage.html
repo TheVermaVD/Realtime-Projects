@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        /* //Setting Initial Datas for designing our page */
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        /* //From Here Started Styling Elements- */
+
+        .header-container {
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* gap: 21vw;   *We can use gap property in place of justify-content*/
+            align-items: center;
+            padding: 0 3.6vw;
+            /* border-bottom: 2px solid #dadada; */
+            /* border: 2px solid red;  *For debugging purpose 
+         background-color: aqua;  */
+        }
+
+        .navbar-container {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            gap: 3vw;
+
+            /* width: 40vw;
+        justify-content: space-between;  *We can use justify-content property with providing some width to container in place of gap property.*/
+            /* background-color:blueviolet ;   *For debugging purpose */
+        }
+
+        .header-container h2 {
+            font-size: 2.8vw;
+            font-weight: 700;
+        
+
+        }
+
+        .navbar-container h4 {
+            font-size: 1.25vw;
+            font-weight: 600;
+            /* color: blue;         *For debugging purpose */
+
+        }
+
+        .navbar-container i {
+            font-size: 1.8vw;
+            font-weight: 800;
+            display: none;
+
+        }
+
+        /* //Content page Styling- */
+
+        .main-page-wrapper {
+
+            width: 100%;
+            height: 100%;
+            /* position: relative; Children works smoothly, give to parent container or wrapper */
+            /* background-color: blue;
+        border: 2px solid red; */
+
+        }
+
+        .content {
+            height: calc(100% - 100px);
+            /*Math function in css */
+            width: 100%;
+            /* background-color:crimson; */
+            display: flex;
+            flex-flow: row wrap;
+            /* position: relative; */
+
+
+        }
+
+        .left {
+            height: 100%;
+            width: 55%;
+            /* border: 1px solid black;
+            background-color: crimson; */
+            padding: 4.5vw 3.6vw;
+            
+
+        }
+
+        .right {
+            height: 100%;
+            width: 45%;
+            padding: 1vw 3.5vw 1vw 2vw;
+            /* border: 1px solid blueviolet; */
+            /*  background-color: chartreuse; */
+        }
+
+        .left h1 {
+            font-size: 4vw;
+            line-height: 3.8vw;
+            /* To specify height between lins. */
+
+        }
+
+        .left h1 span {
+            color: #ff725e;
+        }
+
+        .left p {
+            font-size: 1.4vw;
+            font-weight: 550;
+            color: #666;
+            width: 80%;
+            margin: 5vw 0;
+            /*Top & Bottom = 5vw and left & right = 0*/
+        }
+
+        .left button {
+            font-size: 1.3vw;
+            padding: 1.3vw 2.3vw;
+            background-color: #ff725e;
+            color: #ffff;
+            border: none;
+            /*To remove border line */
+            border-radius: 5px;
+            /* To provide radius around buttom*/
+            font-weight: 700;
+        }
+
+        .right img {
+            height: 100%;
+            width: 100%;
+            /* border : 1px solid red; */
+        
+          
+
+        }
+
+        .navbar-container button{
+
+            font-size: 1.2vw;
+            padding: 0.8vw 1.2vw;
+            background-color: #455a64;
+            border: none;
+            color: #ffff;
+            border-radius: 5px;
+            font-weight: 600;
+
+        }
+    </style>
+
+    <!-- //Added Responsive style sheet CSS -->
+
+    <link rel="stylesheet" href="responsiveStyle.css">
+
+</head>
+
+<body>
+    <div class="main-page-wrapper">
+        <div class="header-container">
+            <h2>LOGO</h2>
+            <div class="navbar-container">
+                <h4>Store</h4>
+                <h4>Courses</h4>
+                <h4>Career</h4>
+                <h4>Blog</h4>
+                <h4>Account</h4>
+                <button>Sign In</button>
+                <i class="ri-menu-3-fill"></i>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <h1>Learn from the <span>coolest</span> coding platform of India.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit facere facilis aperiam! Quidem, in
+                    cum officia quas dolores voluptatem architecto.
+                </p>
+                <button class="cta">Explore Now</button>
+            </div>
+            <div class="right">
+
+                <img src="boy.png" alt="Image Not Found" height="">
+            </div>
+        </div>
+    
+
+    </div>
+</body>
+
+</html>
